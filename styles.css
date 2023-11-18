@@ -10,11 +10,11 @@ body {
     margin-right: auto;
 }
 nav {
-    background-color: #3498db;
+    background-color: #ff0000;
     padding: 1rem;
 }
 nav h1 {
-    color: #ff0000; 
+    color: #fff; 
     margin: 0;
 }
 button {
