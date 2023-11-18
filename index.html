@@ -3,21 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Salesforce Developer Portfolio</title>
 </head>
-<body>
+<body class="bg-gray-100 font-sans">
 
-    <header>
-        <h1>Welcome to My Simple Web Page</h1>
-    </header>
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <h1 class="text-white text-2xl font-semibold">Salesforce Developer Portfolio</h1>
+            <!-- Dark Mode Toggle Button -->
+            <button id="darkModeToggle" class="bg-gray-800 text-white px-4 py-2 rounded">Toggle Dark Mode</button>
+        </div>
+    </nav>
 
-    <main>
-        <p>This is a basic HTML file. You can modify it to build your web page.</p>
-    </main>
+    <!-- Main Content -->
+    <div class="container mx-auto my-8 p-8 bg-white rounded shadow-md">
 
-    <footer>
-        <p>© 2023 My Company</p>
+        <!-- Introduction Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
+            <p class="text-gray-700">
+                Hi, I'm <span class="font-bold">[Your Name]</span>, a passionate Salesforce developer with 3 years of experience in Apex development and Salesforce administration. I thrive on turning ideas into reality through code and enjoy solving complex problems in the Salesforce ecosystem.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+            <ul class="list-disc ml-4">
+                <li>Apex Development</li>
+                <li>Salesforce Administration</li>
+                <li>Lightning Components</li>
+                <li>Visualforce Pages</li>
+                <li>SOQL</li>
+                <li>Data Modeling</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+            <div class="experience-entry">
+                <h3 class="text-lg font-semibold mb-2">Salesforce Developer at <span class="text-blue-500">[Company Name]</span></h3>
+                <p class="text-gray-700">Led development efforts on a major Salesforce project, collaborating with cross-functional teams to deliver high-quality solutions. Administered Salesforce instances and provided technical support to end-users.</p>
+                <p class="text-gray-700">Duration: <span class="font-semibold">[Start Date] - [End Date]</span></p>
+                <button class="experience-details bg-gray-800 text-white px-2 py-1 rounded">Show Details</button>
+                <div class="hidden experience-details-content">
+                    <p>Additional experience details go here.</p>
+                </div>
+            </div>
+            <!-- Add more experience entries as needed -->
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+            <div class="project-entry">
+                <h3 class="text-lg font-semibold mb-2">Salesforce Project X</h3>
+                <p class="text-gray-700">Developed custom Apex triggers and implemented complex workflows to automate business processes. Collaborated with stakeholders to gather requirements and ensure successful project delivery.</p>
+                <p class="text-gray-700">Duration: <span class="font-semibold">[Start Date] - [End Date]</span></p>
+                <button class="project-details bg-gray-800 text-white px-2 py-1 rounded">Show Details</button>
+                <div class="hidden project-details-content">
+                    <p>Additional project details go here.</p>
+                </div>
+            </div>
+            <!-- Add more project entries as needed -->
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Education</h2>
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Bachelor of Science in Computer Science</h3>
+                <p class="text-gray-700">University Name, City, State</p>
+                <p class="text-gray-700">Graduation Year: <span class="font-semibold">[Year]</span></p>
+            </div>
+            <!-- Add more education entries as needed -->
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+            <p class="text-gray-700">Feel free to reach out! I'm open to new opportunities and collaborations.</p>
+            <p class="text-gray-700">Email: <span class="font-semibold">[YourEmail@example.com]</span></p>
+            <p class="text-gray-700">LinkedIn: <a href="[Your LinkedIn Profile]" class="text-blue-500" target="_blank" rel="noopener noreferrer">[Your LinkedIn Profile]</a></p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 p-4 mt-8">
+        <div class="container mx-auto">
+            <p class="text-white text-center">© 2023 Salesforce Developer Portfolio</p>
+        </div>
     </footer>
 
+    <!-- JavaScript for Dark Mode Toggle and Details Toggling -->
+    <script defer src="script.js"></script>
 </body>
 </html>
